@@ -1,0 +1,2 @@
+Hotel: Best Western*|*BW
+	Event: Hello*||*kljfd*||*31*||*31*||*342*||*2311*||*2

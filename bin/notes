@@ -1,0 +1,30 @@
+// for file parsing
+import java.io.FileReader;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class CSVReader {
+    private static File uploadedFile;
+
+    public static uploafFile(File f)
+    {
+        CSVReader.uploadedFile = f;
+    } 
+
+    public static ArrayList<String[]> readCSV(String fileName) throws IOException {
+        ArrayList<String[]> data = new ArrayList<>();
+        FileReader fileReader = new FileReader(fileName);
+        CSVParser parser = new CSVParser();
+        for (String line : parser.parse(fileReader)) {
+            data.add(line.split(","));
+        }
+        fileReader.close();
+    }
+}
+
+// for stats
+https://www.javatpoint.com/jfreechart-line-chart
+https://www.javatpoint.com/jfreechart-pie-chart
+
+// for calendar
